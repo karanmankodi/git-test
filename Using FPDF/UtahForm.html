@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Utah Plant Pest Diagnostic Lab</title>
+<link href="Styles/css/flat-ui.css" type="text/css" rel="stylesheet">	
+<link href="Styles/css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="Styles/css/demo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<form action="UtahPDF.php" method="post">
+	<div class="demo-headline" style="background-color:#B9E3FD">
+    	<img src="Images/header-logo.jpg" alt="logo" class="col-sm-3">
+       <h1 class=>  Utah Plant Pest Diagnostic Lab </h1>
+       <p> Utah Plant Pest Diagnostic Lab, Department of Biology, 5305 Old Hill Rd, Logan, UT </p>
+    </div>
+    <br>
+    <h3 class="demo-panel-title"> SUBMITTER INFORMATION </h3>
+    <div class="row">
+    	<div class="col-sm-12">
+        	<div class="form-group">
+            	<input type="text" name="Name" value="" placeholder="Enter your name" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-6">
+        	<div class="form-group">
+            	<input type="text" name="Address1" value="" placeholder="Address Line 1" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6">
+        	<div class="form-group">
+            	<input type="text" name="Address2" value="" placeholder="Address Line 2" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-6">
+        	<div class="form-group">
+            	<input type="text" name="City" value="" placeholder="City" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-3">
+        	<div class="form-group">
+            	<select name="herolist" value="" class="select-block">
+                    <option value="NY">NY</option>
+                    <option value="AZ">MA</option>
+                    <option value="NC">NC</option>
+                    <option value="FL">FL</option>
+                    <option value="CA"> CA</option>
+                    <option value="UT">UT</option>
+          		</select>
+            </div>
+        </div>
+        <div class="col-sm-3">
+        	<div class="form-group">
+            	<input type="text" name="Zip" value="" placeholder="Zip Code" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-6">
+        	<div class="form-group">
+            	<input type="text" name="Cell" value="" placeholder="Cell Phone" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6">
+        	<div class="form-group">
+            	<input type="text" name="Email" value="" placeholder="E-Mail ID" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-6">
+        	<h4>Contact me by :</h4>
+        </div>
+        <div class="col-sm-2">
+        	<label class="checkbox" for="RegularMail">
+            	<input type="checkbox" value="" id="RegularMail" data-toggle="checkbox" name="regularMail"> Regular Mail
+            </label>
+        </div>
+        <div class="col-sm-2">
+        	<label class="checkbox" for="EMail">
+            	<input type="checkbox" value="" id="EMail" data-toggle="checkbox" name="contactEMail"> E Mail
+            </label>
+        </div>
+        <div class="col-sm-2">
+        	<label class="checkbox" for="Cell">
+            	<input type="checkbox" value="" id="Cell" data-toggle="checkbox" name="contactCell"> Cell
+            </label>
+        </div>
+    </div>
+    <h3 class="demo-panel-title"> COLLECTOR INFORMATION </h3>
+    <div class="row">
+    	<div class="col-sm-12">
+        	<div class="form-group">
+            	<input type="text" name="PlantCommonName" value="" placeholder="Host Plant Common Name" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-12">
+        	<div class="form-group">
+            	<input type="text" name="PlantScientificName" value="" placeholder="Host Plant Scientific Name" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="col-sm-3">
+        	<div class="form-group">
+            	<input type="text" name="PlantAge" value="" placeholder="Plant Age" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-3">
+        	<div class="form-group">
+            	<input type="text" name="PlantSize" value="" placeholder="Plant Size" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-4">
+        	<h4> Condition Worsening? </h4>
+        </div>
+        <div class="col-sm-1">
+        	<label class="radio checked">
+            	<span class="icons">
+                <span class="first-icon fui-radio-unchecked"></span>
+                <span class="second-icon fui-radio-checked"></span>
+                </span>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="Yes" data-toggle="radio" checked="">
+            	Yes
+            </label>
+        </div>
+        <div class="col-sm-1">
+        	<label class="radio unchecked">
+            	<span class="icons">
+                <span class="first-icon fui-radio-unchecked"></span>
+                <span class="second-icon fui-radio-checked"></span>
+                </span>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="No" data-toggle="radio" checked="">
+            	No
+            </label>
+        </div>
+    </div>
+    <h3 class="demo-panel-title"> PLANT SYMPTOM(S) DESCRIPTION </h3>
+	<div class="row">
+    	<div class="col-sm-12">
+        	<div class="form-group">
+            	<h5> Describe in detail what is wrong with the plant and what parts are affected </h5>
+            	<textarea id="textarea" rows="4" cols="100%" class="form-control" name="details"> </textarea>
+			</div>
+        </div>
+    </div>
+    <h3 class="demo-panel-title"> PEST SYMPTOM(S) IMAGES </h3>
+	<div class="row">
+    	<div class="col-sm-12">
+        	<div class="form-group">
+            	<h5>If possible, please provide photos of affected plant(s). A range of photos from landscape-level shots to close-ups are ideal. Including photos can aid diagnostics. </h5>
+                
+			</div>
+        </div>
+        <div class="col-sm-10">
+        	<div class="form-group">
+            	<input type="file" width="100%" value="photo" class="form-control">
+            </div>
+        </div>
+        <div class="col-xs-2">
+          <a href="#" class="btn btn-block btn-primary">Attach</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+    	<input type="submit" class="btn btn-block btn-lg btn-primary" value="Submit"> 
+    </div>
+   	</form>
+</div>
+
+	<script src="Styles/JS/jquery-1.8.3.min.js"></script>
+    <script src="Styles/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="Styles/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="Styles/js/bootstrap.min.js"></script>
+    <script src="Styles/js/bootstrap-select.js"></script>
+    <script src="Styles/js/bootstrap-switch.js"></script>
+    <script src="Styles/js/flatui-checkbox.js"></script>
+    <script src="Styles/js/flatui-radio.js"></script>
+    <script src="Styles/js/jquery.tagsinput.js"></script>
+    <script src="Styles/js/jquery.placeholder.js"></script>
+    <script src="Styles/js/jquery.stacktable.js"></script>
+    <script src="http://vjs.zencdn.net/4.3/video.js"></script>
+    <script src="Styles/js/application.js"></script>
+    
+</body>
+</html>
